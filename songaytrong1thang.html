@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="number" id="thang">
+    <button type="button" onclick="day()">Tính số ngày</button>
+</form>
+</body>
+</html>
+<script>
+    let a = document.getElementById("thang");
+    console.log('vlue',a.value)
+    function day(){
+        console.log('a in function',a.value)
+        switch (parseInt(a.value)){
+            case 1:
+                case 3:
+                    case 5:
+                        case 7:
+                            case 8:
+                                case 10:
+                                    case 12:
+                                        alert('Tháng này có 31 ngày')
+                break;
+                                        case 4:
+                                            case 6:
+                                                case 9:
+                                                    case 11:
+                                                        alert('Tháng này có 30 ngày')
+                break;
+                                                        case 2:
+                                                            alert('Tháng này có 28 hoặc 29 ngày')
+                default :
+                    alert("Nhập Lại Tháng")
+        }
+    }
+</script>
